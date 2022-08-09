@@ -34,6 +34,8 @@ function BigSwitch(a) {
             return "[14..15]";
         case 15:
             return "[15]";
+        default:
+            break;
     }
 }
 z = BigSwitch(0);

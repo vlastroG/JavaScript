@@ -10,11 +10,25 @@ function Addition(a, b) {
 function Subtraction(a, b) {
     return a - b;
 }
-let z = Multiply(4, 8);
+function mathOperation(arg1, arg2, operation) {
+    switch (operation) {
+        case "*":
+            return Multiply(arg1, arg2);
+        case "/":
+            return Divide(arg1, arg2);
+        case "+":
+            return Addition(arg1, arg2);
+        case "-":
+            return Subtraction(arg1, arg2);
+        default:
+            return NaN;
+    }
+}
+let z = mathOperation(10, 5, "*");
 alert(z);
-z = Divide(4, 8);
+z = mathOperation(10, 5, "/");
 alert(z);
-z = Addition(4, 8);
+z = mathOperation(10, 5, "+");
 alert(z);
-z = Subtraction(4, 8);
+z = mathOperation(10, 5, "-");
 alert(z);
