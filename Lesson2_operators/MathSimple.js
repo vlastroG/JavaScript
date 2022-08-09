@@ -24,11 +24,14 @@ function mathOperation(arg1, arg2, operation) {
             return NaN;
     }
 }
-let z = mathOperation(10, 5, "*");
-alert(z);
-z = mathOperation(10, 5, "/");
-alert(z);
-z = mathOperation(10, 5, "+");
-alert(z);
-z = mathOperation(10, 5, "-");
+function Power(val, power) {
+    if (power == 0) {
+        return 1;
+    }
+    else if ((power % 1) == 0 && power > 0) {
+        return val * Power(val, power - 1);
+    }
+    else return null;
+}
+let z = Power(2, 8);
 alert(z);
