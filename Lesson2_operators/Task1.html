@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        Урок 2. Основные операторы JavaScript
+    </h1>
+    <p>
+        var a = 1, b = 1, c, d;
+        c = ++a; alert(c); // 2 , т.к. сначала "а" увеличивается, а затем присвается "с"
+        d = b++; alert(d); // 1 , т.к. сначала идет присваивание, а потом инкрементируется
+        c = (2+ ++a); alert(c); // 5 , т.к. "а" уже равно 2 и еще инкрементируется, в результате 2+3=5
+        d = (2+ b++); alert(d); // 4 , т.к. "b" уже 2, но инкрементируется после присваивания
+        alert(a); // 3 , т.к. к этому моменту "а" увеличилось на 2.
+        alert(b); // 3 , т.к. "b" тоже увеличилось на 2.
+    </p>
+</body>
+
+</html>
