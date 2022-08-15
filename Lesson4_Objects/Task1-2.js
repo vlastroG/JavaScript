@@ -6,7 +6,7 @@ function Post(author, text, date) {
 }
 Post.prototype.edit = function (text) {
     this.text = text;
-}
+};
 function AttachedPost(author, text, date) {
     Post.call(this, author, text, date);
     this.highlighted = false;
@@ -18,6 +18,8 @@ AttachedPost.prototype.makeTextHighlighted = function () {
     this.highlighted = true;
 };
 
+
 let aPost = new AttachedPost("Genry", "MegaText", 1991);
 aPost.makeTextHighlighted();
+aPost.edit("newText");
 let t = 0;
